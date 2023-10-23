@@ -62,6 +62,7 @@ class ViewModel: ObservableObject {
     var messenger: GroupSessionMessenger?
 
     var subscriptions = Set<AnyCancellable>()
+    
     var tasks = Set<Task<Void, Never>>()
 
     func configureGroupSession(_ groupSession: GroupSession<ShoppingActivity>) {
